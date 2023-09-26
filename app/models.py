@@ -25,5 +25,4 @@ class Post(BaseModelClass):
 class Author(BaseModelClass):
     __tablename__ = 'author'
     id = Column(Integer, primary_key=True, index=True)
-    name = Column(String)
-    
+    username = Column(String, unique=True, nullable=False)
